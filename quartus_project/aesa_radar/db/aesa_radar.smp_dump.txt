@@ -1,0 +1,42 @@
+
+State Machine - |aesa_radar|aesa:aesa_inst|aesa_control:aesa_control_inst|state
+Name state.DONE state.OPERATIONAL state.START state.WAIT_DATA state.IDLE 
+state.IDLE 0 0 0 0 0 
+state.WAIT_DATA 0 0 0 1 1 
+state.START 0 0 1 0 1 
+state.OPERATIONAL 0 1 0 0 1 
+state.DONE 1 0 0 0 1 
+
+State Machine - |aesa_radar|aesa:aesa_inst|sys_output:sys_output_inst|state
+Name state.ACK state.REQUEST state.FIFO_RD state.IDLE 
+state.IDLE 0 0 0 0 
+state.FIFO_RD 0 0 1 1 
+state.REQUEST 0 1 0 1 
+state.ACK 1 0 0 1 
+
+State Machine - |aesa_radar|aesa:aesa_inst|input_memory:input_memory_inst|state
+Name state.ACK state.FIFO_WR state.IDLE 
+state.IDLE 0 0 0 
+state.FIFO_WR 0 1 1 
+state.ACK 1 0 1 
+
+State Machine - |aesa_radar|aesa_radar_hps:u0|aesa_radar_hps_mm_interconnect_3:mm_interconnect_3|altera_merlin_burst_adapter:fpga_register_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |aesa_radar|aesa_radar_hps:u0|aesa_radar_hps_mm_interconnect_3:mm_interconnect_3|altera_merlin_burst_adapter:hps_register_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |aesa_radar|aesa_radar_hps:u0|aesa_radar_hps_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:system_input_bridge_avalon_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 

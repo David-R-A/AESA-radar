@@ -1,0 +1,1 @@
+%QUARTUS_ROOTDIR%\\bin64\\quartus_cpf -c demo_led.sof -o bitstream_compression=on soc_system.rbf

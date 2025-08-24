@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="159" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <library
+   expandedCategories="Library/Basic Functions/Simulation; Debug and Verification/Debug and Performance,Library/Basic Functions/Simulation; Debug and Verification,Library,Project,Library/Basic Functions,Library/University Program" />
+ <window width="1936" height="1048" x="-8" y="-8" />
+ <generation synthesis="VHDL" />
+ <hdlexample language="VHDL" />
+</preferences>

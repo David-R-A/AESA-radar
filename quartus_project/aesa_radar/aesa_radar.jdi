@@ -1,0 +1,16 @@
+<sld_project_info>
+  <project>
+    <hash md5_digest_80b="20538673c709b028adf2"/>
+  </project>
+  <file_info>
+    <file device="5CSXFC6D6F31C6" path="aesa_radar.sof" usercode="0xFFFFFFFF"/>
+  </file_info>
+  <sld_infos>
+    <sld_info hpath="aesa_radar_hps:u0" name="u0">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME aesa_radar_hps HAS_SOPCINFO 1 GENERATION_ID 1749756273"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+  </sld_infos>
+</sld_project_info>

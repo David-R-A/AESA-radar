@@ -1,0 +1,1 @@
+sopc-create-header-files "aesa_radar_hps.sopcinfo" --single hps_0.h --module hps_0

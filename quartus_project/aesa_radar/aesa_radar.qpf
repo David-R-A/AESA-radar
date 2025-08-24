@@ -1,0 +1,6 @@
+DATE = "01:16:23 June 12, 2025"
+QUARTUS_VERSION = "16.0.2"
+
+# Revisions
+
+PROJECT_REVISION = "aesa_radar"
