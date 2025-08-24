@@ -1,2 +1,0 @@
-{ "Error" "ECPT_EVAL_EXPIRED" "" "Thank you for using the Quartus Prime software. Your 30-day evaluation period has expired." {  } {  } 0 292037 "Thank you for using the Quartus Prime software. Your 30-day evaluation period has expired." 0 0 "Design Software" 0 -1 1749756181204 ""}
-{ "Error" "EFLOW_ERROR_COUNT" "Full Compilation 1  0 s " "Quartus Prime Full Compilation was unsuccessful. 1 error, 0 warnings" {  } {  } 0 293001 "Quartus Prime %1!s! was unsuccessful. %2!d! error%3!s!, %4!d! warning%5!s!" 0 0 "Design Software" 0 -1 1749756182027 ""}
