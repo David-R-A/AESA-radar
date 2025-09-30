@@ -7,7 +7,13 @@ The full thesis report is available at: [URL]
 
 ## About the Project
 
-TBA
+This thesis focuses on developing a set of translation rules for converting functional models, described in ForSyDe-Shallow, into synthesisable VHDL implementations. The proposed rules are applied and validated through a case study based on an Active Electronically Scanned Array (AESA) radar signal processing pipeline ([ForSyDe AESA radar](https://github.com/forsyde/aesa-radar)). Two stages of this pipeline -- Digital Beamforming (DBF) and Pulse Compression (PC) -- were manually translated into VHDL using the defined transformation rules.
+
+The system was implemented on an Intel Cyclone V SoC, integrating the FPGA fabric and the Hard Processor System (HPS). The system architecture includes memory-mapped input and output stages via AXI interfaces, FIFO-based buffering between the processing stages, and clock-domain separation to meet the timing constraints.
+
+To ensure that numerical accuracy was maintained after converting the model from floating-point to fixed-point representation, a MATLAB evaluation model was developed ad hoc to validate the hardware output.
+
+The results confirm the feasibility of applying rigorous translation rules to develop hardware implementations from functional models. The thesis also supports the possibility of developing an automated tool capable of applying these rules systematically. However, the work also highlights that models can be developed without considering hardware constraints, reinforcing the need to integrate hardware-awareness into the translation process.
 
 ---
 
